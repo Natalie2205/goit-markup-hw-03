@@ -10,6 +10,7 @@
     --grey-bg-color: #F5F4FA;
     --hover-button-color: #188CE8;
     --header-border-color: #ECECEC;
+    --portfolio-border-color: #EEEEEE;
 }
 
 h1,
@@ -283,6 +284,8 @@ img {
 }
 
 .portfolio-button {
+    padding: 6px 22px;
+    margin-bottom: 50px;
     border-color: transparent;
     border-radius: 4px;
     cursor: pointer;
@@ -300,13 +303,37 @@ img {
     color: var(--primary-wh-color);
 }
 
-.works-title {    
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;  
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.works-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.works-card {
+    padding: 20px 24px;
+    border-right: 1px solid var(--portfolio-border-color);
+    border-bottom: 1px solid var(--portfolio-border-color);
+    border-left: 1px solid var(--portfolio-border-color);
+}
+
+.works-title {  
+    margin-bottom: 4px;  
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.works-item {
+.works-type {
     font-size: 16px;
     line-height: 1.88;
 }
